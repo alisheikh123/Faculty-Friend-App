@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.solovyev.android.views:linear-layout-manager:0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a81fa498654cdfc7ca18bcff227d872/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a81fa498654cdfc7ca18bcff227d872/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.solovyev.android.views/linear-layout-manager/0.5/2fbe07bd3dd19b1baa1a518ea344593f74f6ad8e/linear-layout-manager-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="2dp"
+    android:elevation="3dp"
+    app:cardCornerRadius="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/state_file_selection"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/fileImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:paddingRight="8dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_folder" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Medium Text"
+        android:id="@+id/fileNameTextView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/fileImageView"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+       android:singleLine="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/fileInfoTextView"
+        android:layout_below="@+id/fileNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/fileImageView"
+        android:layout_toEndOf="@+id/fileImageView"
+        android:layout_marginTop="0dp"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

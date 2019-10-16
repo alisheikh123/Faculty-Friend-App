@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.litesapp.ftp"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 7
+        versionName "1.0.7"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation files('libs/android-core-3.3.0.jar')
+    implementation files('libs/android-integration-3.3.0.jar')
+    implementation files('libs/aopalliance-1.0.jar')
+    implementation files('libs/commons-io-2.6.jar')
+    implementation files('libs/commons-net-3.6.jar')
+    implementation files('libs/core-3.3.0.jar')
+    implementation files('libs/ftplet-api-1.1.1.jar')
+    implementation files('libs/ftpserver-core-1.1.1.jar')
+    implementation files('libs/jcl-over-slf4j-1.7.21.jar')
+    implementation files('libs/log4j-1.2.17.jar')
+    implementation files('libs/mina-core-2.0.16.jar')
+    implementation files('libs/slf4j-api-1.7.21.jar')
+    implementation files('libs/slf4j-log4j12-1.7.21.jar')
+    implementation files('libs/spring-beans-2.5.5.jar')
+    implementation files('libs/spring-context-2.5.5.jar')
+    implementation files('libs/spring-core-2.5.5.jar')
+
+
+//    implementation 'commons-net:commons-net:3.3'
+
+    implementation 'org.solovyev.android.views:linear-layout-manager:0.5@aar'
+    implementation 'de.greenrobot:eventbus:2.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}

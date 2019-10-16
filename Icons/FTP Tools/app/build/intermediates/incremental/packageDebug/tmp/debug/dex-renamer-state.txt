@@ -1,0 +1,4 @@
+#Tue Oct 15 09:59:18 PDT 2019
+base.0=C\:\\Users\\Ali Sheikh\\OneDrive\\Desktop\\Icons\\FTP Tools\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex

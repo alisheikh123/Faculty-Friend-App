@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_openRemote"
+            android:title="Remote FTP"
+            android:icon="@drawable/ic_ftp_remote"/>
+
+
+        <item
+            android:id="@+id/nav_tutorial"
+            android:icon="@mipmap/about"
+            android:title="@string/tutorial" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@mipmap/privacy"
+            android:title="@string/privacy" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@mipmap/contact"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

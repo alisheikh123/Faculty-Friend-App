@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F4F4"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/connectionEditImageButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@null"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintEnd_toStartOf="@+id/connectionDeleteImageButton"
+        app:layout_constraintRight_toLeftOf="@+id/connectionDeleteImageButton"
+        app:layout_constraintTop_toTopOf="@+id/connectionDeleteImageButton" />
+
+    <ImageView
+        android:id="@+id/connectionDeleteImageButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@null"
+        android:clickable="true"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_menu_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/connectionAtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connection_at"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintLeft_toRightOf="@+id/connectionUserTextView"
+        app:layout_constraintStart_toEndOf="@+id/connectionUserTextView"
+        app:layout_constraintTop_toTopOf="@+id/connectionUserTextView" />
+
+    <TextView
+        android:id="@+id/connectionHostTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="host"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/connectionAtTextView"
+        app:layout_constraintStart_toEndOf="@+id/connectionAtTextView"
+        app:layout_constraintTop_toBottomOf="@+id/connectionNameTextView" />
+
+    <TextView
+        android:id="@+id/connectionNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/connectionDeleteImageButton" />
+
+    <TextView
+        android:id="@+id/connectionUserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectionNameTextView" />
+
+
+    <!--
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionEditImageButton"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/connectionDeleteImageButton"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectionDeleteImageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_delete" />
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

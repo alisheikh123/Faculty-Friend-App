@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ftp_remote_title">FTPRemote</string>
+    <string name="port_length_error">Length must not greater then 5</string>
+</resources>
